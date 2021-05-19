@@ -21,7 +21,7 @@ var passwordLength = " ";
 //define a function that will generate the password
 function generatePassword() {
   var passwordLength = prompt("choose a length of at least 8 characters and no more than 128 characters");
-  
+
   if (isNaN(passwordLength) === false) {
     var numberlength = Number(passwordLength);
     if (numberlength >= 8 && numberlength <= 128) {
@@ -29,22 +29,22 @@ function generatePassword() {
     } else {
       passwordLength = prompt(" Not Valid, choose a length of at least 8 characters and no more than 128 characters");
     }
-    
+
   } else {
     console.log("Invalid Input")
   }
-  
+
   var Uppercase = confirm("do you want uppercase characters?")
   console.log(Uppercase)
-  
+
   var lowerCase = confirm("do you want lowercase characters?")
   console.log(lowerCase)
   var numeric = confirm("do you want numeric characters?")
   console.log(numeric)
-  
+
   var specialCharacters = confirm("do you want specialCharacters?")
   console.log(specialCharacters)
-  
+
   return resultPassword;
 }
 
