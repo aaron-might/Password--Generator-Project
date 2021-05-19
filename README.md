@@ -1,4 +1,4 @@
-# 03 JavaScript: Password Generator
+#  Password Generator Project
 
 
 # Table of contents
