@@ -32,11 +32,22 @@ function generatePassword() {
 
   } else {
     console.log("Invalid Input")
+  
+  }
+
+  var resultPassword = " ";
+  var passwordLength = " ";
+  
+  for (var i = 0; i < passwordLength.length; i++) {
+    
+    var randomIndex = Math.floor(Math.random() * passwordLength.length)
+    console.log(randomIndex, passwordLength[randomIndex]);
+    resultPassword += passwordLength[randomIndex];
   }
 
   var Uppercase = confirm("do you want uppercase characters?")
   console.log(Uppercase)
-
+  
   var lowerCase = confirm("do you want lowercase characters?")
   console.log(lowerCase)
   var numeric = confirm("do you want numeric characters?")
@@ -44,18 +55,9 @@ function generatePassword() {
 
   var specialCharacters = confirm("do you want specialCharacters?")
   console.log(specialCharacters)
-
-  return resultPassword;
-}
-
-var passwordLength = " ";
-var resultPassword = " ";
-
-for (var i = 0; i < passwordLength.length; i++) {
-
-  var randomIndex = Math.floor(Math.random() * passwordLength.length)
-  console.log(randomIndex, passwordLength[randomIndex]);
-  resultPassword += passwordLength[randomIndex]
+  //console.log("resultPassword is ....", resultPassword)
+  return resultPassword
+  
 }
 
 
